@@ -34,9 +34,11 @@ const people = [
    const index = comments.findIndex(comment => comment.id === 823423);
 
    console.log(index);
-  // Find the comment with this ID
-  const newComments = [
+  // delete the comment with the ID of 823423
+   const newComments = [
     ...comments.slice(0, index),
     ...comments.slice(index + 1)
   ];
-  // delete the comment with the ID of 823423
+
+// A DIFFERENT WAY TO SOLVE THE EX:
+//   comments.splice(index, 1);
